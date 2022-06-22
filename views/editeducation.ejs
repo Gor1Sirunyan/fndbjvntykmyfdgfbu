@@ -1,0 +1,25 @@
+<% extend('layout') %>
+<% if(typeof message != 'undefined'){ %>
+    <p><%= message %></p>
+<% } %>
+<% if(typeof user != 'undefined' && user){ %>
+    <form method="POST" action="/users/editeducation/<%= user.id %>">
+
+        <div id="divEditEducation">
+            <h2 id="h2edit">Փոփոխել կրթությունը</h2>
+            <div>
+                <label style="color:#2c3034">Կրթությունը</label>
+            <input id="inpe" type="text" name="university" value="<%= user.university %>" >
+                <label style="color:#2c3034">Լեզուներ</label>
+            <input id="inpe" type="text" name="languages" value="<%= user.languages %>" >
+            </div>
+            <label style="color:#2c3034">Դասընթացներ</label>
+            <input id="inpe" type="text" name="courses" value="<%= user.courses %>" >
+            <label style="color:#2c3034">Ուղղվածություն</label>
+            <input id="inpe" type="text" name="direction" value="<%= user.direction %>" >
+            <button id="eebtn" type="submit">Update</button>
+        </div>
+
+
+    </form>
+<% } %>

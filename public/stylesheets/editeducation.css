@@ -1,0 +1,39 @@
+#divEditEducation {
+    padding-top:  20px;
+    padding-left: 300px;
+ /*   background-color: #87d35e;*/
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: 0px;
+}
+#divEditEducation label{
+    height: 30px;
+    background-color: #87d35e;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid #e5c7ca;
+    padding: 5px;
+}
+#inpe{
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid #e5c7ca;
+    height: 50px;
+    width: 300px;
+    margin: 40px;
+}
+#h2edit{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+#eebtn{
+    background-color: #2cabe3;
+    display: block;
+    margin-top:  20px;
+    margin-left: 300px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid #e5c7ca;
+}

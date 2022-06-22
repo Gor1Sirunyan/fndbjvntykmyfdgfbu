@@ -1,0 +1,45 @@
+<% extend('layout') %>
+
+
+<div id="maindiv">
+    <form action="/users/addemployments" method="post">
+        <div id="div">
+              <div id="empdiv1">
+                    <label id="inp">Դիմելու ամսաթիվ</label>
+                    <input class="date" id="inp" style="margin-left:35px" type="text"  name="application_date" >
+                </div>
+                <div>
+                    <label id="lab2">Հարցազրույցի ամսաթիվ</label>
+                    <input class="date" id="inp" type="text" placeholder="Հարցզրույցի ամսաթիվ" name="interview_date" >
+                </div>
+               <div>
+                   <input id="inp1" type="text" placeholder="Անուն ազգանուն" name="full_name">
+                   <label id="lab3">Ծննդյան օր</label>
+                   <input class="date" id="inp" type="text" name="birthday" >
+               </div>
+              <div id="div2">
+            <input id="inp" type="text" placeholder="Մասնագիտություն" name="profession">
+            <input id="inp" type="text" placeholder="education id" name="education_id">
+            <input id="inp" type="number" placeholder="experience id" name="experience_id" >
+              </div>
+        </div>
+
+        <div id="div1">
+         <textarea id="txta" type="text" placeholder="Մեկնաբանություններ" name="comments" class="txt" ></textarea>
+       </div>
+        <div id="div">
+            <input id="inp" type="number" placeholder="Հեռախոսահամար" name="phone_number">
+            <input id="inp" type="text" placeholder="Էլ․ հասցե" name="email">
+        </div>
+
+        <span>Upload Profile Picture:</span>
+        <input type="file" name="mypic" required/> <br>
+
+        <div id="div">
+          <button id="empbtn" >SEND</button>
+        </div>
+
+    </form>
+
+
+</div>

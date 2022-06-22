@@ -1,0 +1,44 @@
+#maindiv{
+    background-color: #b6d4fe;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -20px;
+}
+#div{
+    margin-top:  20px;
+   /* margin-left: 300px;*/
+}
+#inp{
+    margin-top: 20px;
+    color: #2cabe3 ;
+    margin-left: 30px;
+
+}
+#inp1{
+    color: #2cabe3 ;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+#lab2{
+    color: #60b532;
+}
+
+#div2{
+    margin-top: 40px;
+}
+#lab3{
+    margin-left: 30px;
+}
+#txta{
+    margin-left: 30px;
+    box-sizing: border-box;
+    border:1px solid #4cb8e7;
+    border-radius: 10px 15px;
+}
+#empbtn{
+    margin-left: 40px;
+    border-radius: 60px;
+    border:1px solid #4cb8e7;
+}

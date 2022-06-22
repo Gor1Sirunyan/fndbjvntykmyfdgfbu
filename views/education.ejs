@@ -1,0 +1,30 @@
+<% extend('layout') %>
+<div class="form" >
+    <form action="/users/education" method="post">
+        <div id="divedu">
+            <h2 id="h2edit">Ավելացնել կրթությունը</h2>
+
+               <select id="impedu"   name="university">
+            <% universities.forEach(function(row){ %>
+                <option value=' <%= row.place_of_study %> '><%= row.place_of_study %>
+            <% }) %>
+
+            </select>
+
+            <input id="impedu" type="text" placeholder="լեզուներ" name="languages">
+
+        </div>
+        <div id="divedu">
+            <input id="impedu" type="text" placeholder="հաճախած դասընթացներ" name="courses">
+            <input id="impedu" type="text" placeholder="Ֆակուլտետը եւ ծրագրավորման ուղղվածությունը" name="direction">
+
+        </div>
+        <div id="div">
+        <button id="btnedu" >SEND</button>
+        </div>
+        <div id="div">
+            <a id="aedu" href="/users/addemployments">Դիմորդներ</a>
+        </div>
+    </form>
+
+</div>

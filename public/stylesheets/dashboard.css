@@ -1,0 +1,31 @@
+#editform{
+    padding-top:  20px;
+    padding-left: 300px;
+   /* background-color: #87d35e;*/
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: 0px;
+}
+
+
+.edita{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+/*#edith2{
+  text-align: center;
+}*/
+#editinput{
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 1px solid #d17905;
+}
+#xbtn{
+    color: #191c1f;
+    height: 35px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 1px solid #d17905;
+}

@@ -1,0 +1,37 @@
+#div1,#container{
+   /* margin-left: 300px;**/
+   margin-top: 40px;
+}
+.txt{
+    height: 200px;
+    width: 30%;
+}
+.form{
+    /*background-color: #ffcc83;*/
+   /* margin-left: 300px;*/
+    margin-top: -20px;
+    min-height: 100vh;
+}
+#divedu{
+    margin-top:  20px;
+}
+
+#impedu{
+    height: 40px;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #414958;
+    border-radius: 30px 25px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#btnedu {
+    border: 1px solid #41b3f9;
+    border-radius: 40px;
+    background-color: #b6effb;
+    margin-left: 30px;
+}
+#aedu{
+    margin: 30px;
+
+}

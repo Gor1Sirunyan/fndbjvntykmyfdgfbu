@@ -1,0 +1,42 @@
+<% extend('layout') %>
+<% if(typeof message != 'undefined'){ %>
+    <p><%= message %></p>
+<% } %>
+<% if(typeof user != 'undefined' && user){ %>
+    <form id="editform" method="POST" action="/users/edit/<%= user.id %>">
+        <h2 id="edith2">Edit user</h2>
+        <div id="div">
+            <div>
+                <label style="color:#2c3034">Դիմելու ամսաթիվ</label>
+            <input style="margin-left:30px"  id="editinput" type="date" placeholder="application_date" name="application_date" value="<%= user.application_date %>" >
+                <label  style="color:#2c3034;margin-left: 30px">Հարցազրույցի ամսաթիվ</label>
+            <input style="margin-left:30px" id="editinput" type="date" placeholder="interview_date" name="interview_date" value="<%= user.interview_date %>" >
+            </div>
+            <div>
+            <input id="editinput" type="text" placeholder="full name" name="full_name" value="<%= user.full_name %>" >
+                <label style="color:#2c3034;margin-left: 30px">Ծննդյան օր</label>
+            <input style="margin-left:30px" id="editinput" type="date" name="birthday"  value="<%= user.birthday %>" >
+            <input style="margin-left:30px" id="editinput" type="text" placeholder="profession" name="profession" value="<%= user.profession %>" >
+            </div>
+            <input id="editinput" type="text" placeholder="education id" name="education_id" value="<%= user.education_id %>" >
+            <input id="editinput" type="number" placeholder="experience id" name="experience_id" value="<%= user.experience_id %>" >
+
+        </div>
+
+
+        <div id="div1">
+            <textarea style="padding: 40px 80px; border: 2px solid #61c9f8;border-radius: 30px" type="text"  placeholder="comments" name="comments"><%= user.comments %></textarea>
+        </div>
+        <div id="div">
+            <input id="editinput" type="number" placeholder="phone number" name="phone_number" value="<%= user.phone_number %>" >
+            <input id="editinput" type="text" placeholder="email" name="email" value="<%= user.email %>" >
+        </div>
+        <div id="div">
+            <button id="xbtn" type="submit">Update</button>
+        </div>
+
+
+    </form>
+<% } %>
+
+
